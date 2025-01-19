@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16e7576c-f3cb-4ef2-a8e3-90639ff3194b" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/etls/reddit_etl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dags/reddit_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/reddit_dag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etls/reddit_etl.py" beforeDir="false" afterPath="$PROJECT_DIR$/etls/reddit_etl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipelines/reddit_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/reddit_pipeline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constants.py" afterDir="false" />
     </list>
