@@ -1,0 +1,96 @@
+id,title,selftext,score,num_comments,author,created_utc,url,over_18,edited,spoiler,stickied
+1i50mw6,Pinterest Data Tech Stack,"Sharing my 7th tech stack series article.
+
+Pinterest is a great tech savy company with dozens of tech used across teams. I thought this would be great for the readers.
+
+Content is based on multiple sources including Tech Blog, Open Source websites, news articles. You will find references as you read.
+
+Couple of points:
+- The tech discussed is from multiple teams.
+- Certain aspects are not covered due to not enough information available publicly. E.g. how each system work with each other.
+- Pinterest leverages multiple tech for exabyte scala data lake.
+- Recently migrated from Druid to StarRocks.
+- StarRocks and Snowflake primary purpose is storage in this case, hence mentioned under storage.
+- Pinterest maintains their own flavor of Flink and Airflow.
+- Headsup! The article contains a sponsor.
+
+
+Let me know what I missed.
+
+
+Thanks for reading.",60,8,mjfnd,2025-01-19 15:14:36,https://www.junaideffendi.com/p/pinterest-data-tech-stack?r=cqjft&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false,False,False,False,False
+1i52gfe,"Data Engineers, What Business and Technical Challenges Have You Faced?
+
+","currently working on projects. However, I don't have job experience yet, so I want to make my solutions realistic and have added value
+
+Could you share some  **business problems** and **technical challenges** you’ve faced while implementing data solutions? 
+
+Thank you in advance 
+
+",33,21,Murky-Principle6255,2025-01-19 16:34:10,https://www.reddit.com/r/dataengineering/comments/1i52gfe/data_engineers_what_business_and_technical/,False,False,False,False
+1i5ijat,This chapter from the book Homo Deus,Reading my first book of 2025 - Homo Deus. Can relate to everything in this chapter about **Dataism**. Have you read it? What do you think about it?,50,11,ephemeral404,2025-01-20 04:54:39,https://i.redd.it/1dtakl17y2ee1.jpeg,False,False,False,False
+1i4xbdk,How to handle open ended design questions for Data roles and way forward?,"Recently I have seen that in the second or third round companies are asking open ended one liners, how should we approach these? Apart from the Data model, they are also expecting that we make some low level code and APIs and then also explain them about why we chose one service over the other, explain about latency, throughput stuff etc.  
+Examples:
+
+1. Design a Rider Management Platform which will provide riders to different e-commerce/quick-commerce websites
+
+2. Design DQ Framework.
+
+3. Design whatsapp/instagram/twitter/Jira etc.
+
+As someone who wants to grow more into this field, I mean like as I grow I want to be on the tech side only like Data Engineer - > Senior Data Engineer - > Lead/Staff DE -> Principal DE. How should we proceed? Because these questions are similar to the System design rounds for Software profiles. Also, I feel that next 5 years DE profile is going to be merged in to Software roles only, like we see in some companies with designation such as Data Software engineer or Software Engineer (Data).
+
+Seeking guidance from Senior folks here.  
+",16,2,jaina15,2025-01-19 12:23:56,https://www.reddit.com/r/dataengineering/comments/1i4xbdk/how_to_handle_open_ended_design_questions_for/,False,False,False,False
+1i4url5,What do you think of Talend?,"Qlik acquired Talend and has integrated it into their data studio for ingestion (currently limited to databases afaik).
+
+Since our organization already uses Qlik, this was introduced to us last year. One of our team members spent a few weeks exploring it and concluded that it had its rough edges and was difficult to troubleshoot if something went wrong.
+
+Now, it's being showed down our throats as it has been decided that Talend will be used for ingestions, because management believes UI-based tools equate to faster results. To counter this, I built a few ingestion pipelines for sources that Talend cannot handle (such as Rest APIs) using [dlt](https://github.com/dlt-hub/dlt) that have been working just fine since ~October of last year, but it seems that has fallen on deaf ears.
+
+Has anyone here used the Qlik-integrated version of Talend? What’s your experience with it?",15,28,laegoiste,2025-01-19 09:24:14,https://www.reddit.com/r/dataengineering/comments/1i4url5/what_do_you_think_of_talend/,False,False,False,False
+1i5gebc,Low latency < 500 ms query engine,"A team of users would like to have a quick response to their queries and the refresh rate for the dashboards.
+
+Data is in SingleStore and in Iceberg on S3.
+
+What would you suggest as the Query engine? Trino is what I am thinking around but anyone have experiences with something else?",12,22,Accurate-Peak4856,2025-01-20 02:53:26,https://www.reddit.com/r/dataengineering/comments/1i5gebc/low_latency_500_ms_query_engine/,False,False,False,False
+1i54dy3,Getting Foot in the Door as a Data Engineer,"I'm looking to make the switch to full time data engineering position. I find the field fascinating. I have working over last 7 years spending 1/2 my time as an analyst and 1/2 work non data related tasks. I want to make the switch to a permanent role. Pretty good at SQL, data visualization software's. Got a bit python experience as well. I'm close to south bay Silicon Valley and am open to working in office. Is that enough to get my foot in the door with the current scope of the market? Should I be contacting recruiters or is there a better method here? I feel a tiny bit intimidated, but at the same time, am confident I can learn anything. Is there an approach that you would all recommend?",15,14,JohnBaptistePhilouza,2025-01-19 17:55:09,https://www.reddit.com/r/dataengineering/comments/1i54dy3/getting_foot_in_the_door_as_a_data_engineer/,False,False,False,False
+1i4yvgd,Azure Data Factory Data Flow vs SQL script in Synapse ,"Hello guys!  
+  
+I would like to ask for you help in order to decide whether the current data pipeline usage is good or bad.  
+  
+In my company we use Azure stack. We gather the data from source systems (mostly Postgres and MariaDB) using Copy activity to acquire and store source data into Azure Data Lake Gen2 in parquet format.   
+After that we use Data Flow activity to read the data from Azure Data Lake, do some transformations and then load the data into the Data Warehouse (Synapse Analytics Dedicated SQL Pool).   
+What I experienced is that, by using Data Flow activity it takes some minutes (2-3 minutes) to accomplish a very basic data transformation task (such as loading fact data without having to calculate anything). Spark cluster has already been started, and TTL option is set, so it is not about instantiating a Spark cluster. The parquet files' size on the other hand are little (most of the time it does not reach 1 MB). The interesting fact is that when I monitor the Data Flow activity, the processing time is just about some seconds, but when I monitor the whole data pipeline it shows that the Data Flow activity ran for minutes, which is not effective and I think it should be run much faster.  
+  
+I tried out a new approach, which would be loading the raw data into Synapse Analytics (As Is), and then use SQL script activity to do the same transformation logic but this time the source data would be a staging table in Synapse to be able to execute SQL.  
+It was much faster in terms of Data Pipeline execution time and also it became much cheaper approach, because i did not have to use Data Flow activity and Spark cluster.
+
+I'm curious about your opinion about the data pipeline setup. Is there any better approach than using Data Flow activity to do this data transformation? Is it better to use Azure Databricks or Synapse notebook in pyspark for this job? Or what else could you recommend? I would like to learn from your experience. Any suggestion or opinion would be much appreciated!
+
+",12,5,Ancient-Low85,2025-01-19 13:51:41,https://www.reddit.com/r/dataengineering/comments/1i4yvgd/azure_data_factory_data_flow_vs_sql_script_in/,False,False,False,False
+1i4vij8,"We added parquet support (shoutout to the great hyparquet package) to our data management/app building tool, interested in feedback on workflow and anything else. Here working on the flights-1m dataset.",,8,3,fudgem,2025-01-19 10:19:46,https://v.redd.it/km942he6fxde1,False,False,False,False
+1i56pk8,Any advice for new Data Engineer?,"I just graduated college 6-8 months ago and will be joining a startup as a junior DE along with other junior, senior and staff DE. Any advice for me? I’m very nervous and having a bit of imposter syndrome. I’ll be using AWS, Databricks, Spark, Airflow and dbt.",9,16,neophyte357,2025-01-19 19:29:43,https://www.reddit.com/r/dataengineering/comments/1i56pk8/any_advice_for_new_data_engineer/,False,False,False,False
+1i50j2w,Data/System Design Resources,"Any one know where I can find comprehensive resources for Designing an end to end data ingestion pipeline. I want to ensure all things like designing, choosing tools, and scaling. Most YouTube videos aren’t that good and say generic stuff.  Thanks in advance. ",7,3,Smart-Ad9387,2025-01-19 15:09:51,https://www.reddit.com/r/dataengineering/comments/1i50j2w/datasystem_design_resources/,False,False,False,False
+1i4x07k,Need Help Finding resources for transactional data modeling,"I want to utilise a supervised ML model to score users based on their transactional data (the data contains both raw transaction data and analysed data - done by the third party ). it would be a supervised model, I have decided to use 30+ dpd in the next 6 months from the last transaction date as the indicator for good/bad behaviour. Any resources or Suggestions would be helpful. posted this on learnmachinelearning as well, but hoping to get resources from here too. Thanks in advance",3,1,shreekar-h,2025-01-19 12:03:22,https://www.reddit.com/r/dataengineering/comments/1i4x07k/need_help_finding_resources_for_transactional/,False,False,False,False
+1i5iqhi,Hands on data engineering course ,Can anybody recommend an online hands-on data engineering course ? Would help becoming  product based data engineer and is practical for real world experience ,2,4,KBHAL,2025-01-20 05:06:07,https://www.reddit.com/r/dataengineering/comments/1i5iqhi/hands_on_data_engineering_course/,False,False,False,False
+1i54xeq,How to design Python Airflow DAG to run infinite loop programs then start next once it is running?,"https://preview.redd.it/6rwcq3rzrzde1.png?width=2560&format=png&auto=webp&s=5d127a10880843ca40b51c42843745b3e87d97fd
+
+I am working on learning Apache Airflow, Kafka, and Spark. I ran into this issue where I want to run this Dag flow of starting up zookeeper, starting up the kafka broker, then starting up my PySpark program for listening in real time. The issue is I cant get the DAG to proceed out of stage 1 because I think it is an infinite looping program for starting up the processes. Any help?",2,7,scuffed12s,2025-01-19 18:16:40,https://www.reddit.com/r/dataengineering/comments/1i54xeq/how_to_design_python_airflow_dag_to_run_infinite/,False,False,False,False
+1i5jng3,"AI agent to chat with database and generate sql, charts, BI",,5,2,opensourcecolumbus,2025-01-20 06:02:42,https://opensourcedisc.substack.com/p/opensourcediscovery-96-wrenai,False,False,False,False
+1i5fgc8,Hey I am looking for someone who can tutor me in Azure DE and Fabric,"I know there are lots of courses out there but I would love to talk to someone in realtime and work in some mini projects. If anyone is interested please dm, or also I am open to suggestion what other ways you guys reckon I can learn. ",0,1,Single-Programmer437,2025-01-20 02:03:08,https://www.reddit.com/r/dataengineering/comments/1i5fgc8/hey_i_am_looking_for_someone_who_can_tutor_me_in/,False,False,False,False
+1i5307p,What's the Data Architecture being used at your Company at present.,"Hello Guys,
+
+I am new to Data Engineering and would like to know or explore what are all the different architectures being used in different companies at present. Feel free to omit the Company name. 
+
+Kindly mention the **size of the data being handled** at source and at different stages if applicable to make the understanding easier
+
+Kindly mention the following (Feel free edit as per your need)  
+1) Data Sources - Mention atleast 3 sources from where the data is mostly pulled from  
+2) Data Ingestion - Tools used and in which format data is pulled and which format they are saved  
+3) Architecture used - Medallion or any other architecture  
+3) Orchestration and Data Transformation  - Tools used  
+4) Data Warehouses if any being used and how they are updated  
+5) How the data is exposed for Analytics and other purposes  
+6) Security and Governance  
+",0,7,Great-Ranger-6895,2025-01-19 16:57:31,https://www.reddit.com/r/dataengineering/comments/1i5307p/whats_the_data_architecture_being_used_at_your/,False,False,False,False
