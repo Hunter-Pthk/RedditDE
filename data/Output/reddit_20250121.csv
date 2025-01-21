@@ -1,0 +1,180 @@
+id,title,selftext,score,num_comments,author,created_utc,url,over_18,edited,spoiler,stickied
+1i5tmep,"What do you consider as ""overkill"" DE practices for a small-sized company?","What do you consider as ""overkill"" DE practices for a small-sized company?
+
+Several months earlier, my small team thought that we need orchestrator like Prefect, cloud like Neon, and dbt. But now I think developing and deploying data pipeline inside Snowflake alone is more than enough to move sales and marketing data into it. Some data task can also be scheduled using Task Scheduler in Windows, then into Snowflake. If we need a more advanced approach, snowpark could be built.
+
+We surely need connector like Fivetran to help us with the social media data. However, the urge to build data infrastructure using multiple tools is much lower now.
+
+",53,71,ketopraktanjungduren,2025-01-20 16:06:51,https://www.reddit.com/r/dataengineering/comments/1i5tmep/what_do_you_consider_as_overkill_de_practices_for/,False,False,False,False
+1i60fx8,Postgres is now top 10 fastest on clickbench,,42,6,InternetFit7518,2025-01-20 20:40:19,https://www.mooncake.dev/blog/clickbench-v0.1,False,False,False,False
+1i67kc9,Snowflake sent 6 behavior change emails in the last 3 weeks. Am I the only that find it annoying?,"I usually read these emails and flag them to engineering as an additional layer to ensure nothing breaks. Folks have been slowly ramping up since the holidays, and I have a mountain of backlogs and emails to go through.
+
+Then Snowflake sent us these emails. In the past, similar behavior changes have broken our pipeline, causing significant headaches. These changes are often poorly documented online, requiring us to comb through behavior change emails like this to figure out what went wrong.
+
+Now, whenever Snowflake sends these emails, our support team sees them, our partnership team sees them, I see them, and engineering sees them. To avoid multiple people reading unnecessary emails and trying to decipher their meaning, I usually open a ticket and explain what’s going on and how it impacts us.
+
+Every email means I have to open a ticket.
+
+They sent us six emails—three for a service we don’t use (Streamlit) and three that probably (but unlikely) impact us and require investigation.
+
+Is it just me, or is this incredibly annoying? 
+
+",29,3,anyfactor,2025-01-21 01:53:55,https://www.reddit.com/r/dataengineering/comments/1i67kc9/snowflake_sent_6_behavior_change_emails_in_the/,False,False,False,False
+1i5kv4o,DP-203 Retired. What now?,"Big news for Azure Data Engineers! Microsoft just announced the retirement of the DP-203 exam - but what does this really mean?
+
+ 
+
+If you're preparing for the DP-203 or wondering if my full course on the exam is still relevant, you need to watch my latest video!
+
+ 
+
+In this episode, I break down:
+
+ •  Why Microsoft is retiring DP-203
+
+ •  What this means for your Azure Data Engineering certification journey
+
+ •  Why learning from my DP-203 course is still valuable for your career
+
+ 
+
+Don't miss this critical update - stay ahead in your data engineering path!
+
+
+
+[https://youtu.be/5QT-9GLBx9k](https://youtu.be/5QT-9GLBx9k)",18,13,TybulOnAzure,2025-01-20 07:26:39,https://www.reddit.com/r/dataengineering/comments/1i5kv4o/dp203_retired_what_now/,False,False,False,False
+1i5s6pt,Databricks or MS Fabric,"Hello,
+I currently work at a company where we have a data warehouse (DWH) hosted on an on-premises SQL Server database. Every day, we execute a series of pipelines from Azure Data Factory, which are responsible for extracting information from the sources (OLTP databases and some CSV files in Azure Blob Storage) and loading it into staging tables in the DWH. Afterward, we use stored procedures to create dimensions (DIMs) and facts.
+
+The issue is that the volume of data has grown significantly, and nightly loads are taking much longer to complete. I believe this is happening because we are using an OLTP database rather than an analytical database.
+
+The decision to build this DWH on SQL Server was made many years ago, before I joined the company.
+
+Now we are considering migrating the entire DWH infrastructure to something more modern. I have been researching, and I like the Databricks medallion lakehouse architecture using a Spark cluster. However, I’ve also seen that many people are beginning to adopt this architecture using MS Fabric with a SQL dedicated pool, which could also be implemented here.
+
+Which option would you recommend for this migration to achieve the best possible performance and cost? Also, what about development time?
+
+P.S.: Our DWH currently weighs 8TB.",16,24,Used_Shelter_3213,2025-01-20 15:06:40,https://www.reddit.com/r/dataengineering/comments/1i5s6pt/databricks_or_ms_fabric/,False,False,False,False
+1i68gxc,35k euro in Paris as a data engineer is it good or bad? ,"I have 3 years of experience before Masters and graduated from a FRENCH B SCHOOL. 
+
+Got an offer of 35k location Paris. Is it according to market standards?
+
+How much salary I should ask.
+
+What's the salary of an entry level Software Engineer/Data Engineer in Paris",13,4,EnoughRefrigerator56,2025-01-21 02:39:19,https://www.reddit.com/r/dataengineering/comments/1i68gxc/35k_euro_in_paris_as_a_data_engineer_is_it_good/,False,False,False,False
+1i5jng3,"AI agent to chat with database and generate sql, charts, BI",,8,7,opensourcecolumbus,2025-01-20 06:02:42,https://opensourcedisc.substack.com/p/opensourcediscovery-96-wrenai,False,False,False,False
+1i5wsea,Learning go,"Hello everyone Happy new year. I have started learning Go but i dont have direction to have advanced Level. Someone can we give advice about that?
+",9,3,Seefood_00237,2025-01-20 18:15:00,https://www.reddit.com/r/dataengineering/comments/1i5wsea/learning_go/,False,False,False,False
+1i5pp7f,Review and Finger Exercises for Networking in Docker and Docker Compose,"The first 14 minutes are probably a bit painful as I stumble through making my diagrams.   
+  
+However, if you are completely new to networking in Docker I think it's worth the time to watch and get the overview of how Docker, Docker Networks and you Local Machine's Network interact.   
+  
+Don't worry, it's not all drudgery. There is a simple Repo in the description so you can get hands on keyboard and actually practice. So if you are just using this as a quick refresher go ahead and jump to timestamp 14:00, clone the repo and follow along
+
+[https://www.youtube.com/watch?v=jE7aRk6uZT4](https://www.youtube.com/watch?v=jE7aRk6uZT4)",7,2,DataSling3r,2025-01-20 13:04:27,https://www.reddit.com/r/dataengineering/comments/1i5pp7f/review_and_finger_exercises_for_networking_in/,False,False,False,False
+1i5v4ir,Dataform tools VS Code extension,"Hi all, I have created a VSCode extension Dataform tools to work with Dataform. It has extensive set of features such as ability to run files/tags, viewing compiled query in a web view, go to definition, directly preview query results, inline errors in VSCode, format files using sqlfluff, autocompletion of columns to name a few. I would appreciate it if people can try it out and give some feedback
+
+[Link to VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=ashishalex.dataform-lsp-vscode)
+
+[Link to GitHub](https://github.com/ashish10alex/vscode-dataform-tools)
+
+[YouTube video on how to setup and demo](https://www.youtube.com/watch?v=nb_OFh6YgOc)",4,0,missionCritical007,2025-01-20 17:08:12,https://www.reddit.com/r/dataengineering/comments/1i5v4ir/dataform_tools_vs_code_extension/,False,False,False,False
+1i68uc6,Ethical Issues in Data Science,"Hello everyone! 
+
+I'm currently pursuing an MS in Data Science and taking a course on ""Ethical Issues in Data Science"". 
+
+
+
+I’m looking for a volunteer (Data science / Computing / Statistics professional) to discuss their experiences with ethical challenges—both technical and workplace-related—and their thoughts on how these situations were handled. 
+
+
+
+All personal details, including names and companies, will remain anonymous. The chat would ideally take place via Zoom or any platform that works for you and would take about 15-20 minutes. If you prefer we can do it over DM.
+
+
+
+If you're interested, please comment below or send me a direct message. Thanks in advance for your help!",6,8,jilaba-hindga,2025-01-21 02:58:29,https://www.reddit.com/r/dataengineering/comments/1i68uc6/ethical_issues_in_data_science/,False,False,False,False
+1i68dy1,nerd neck prevention (opencv2-posture-corrector),"Hey all,
+
+As a remote worker, I have found myself slouching and getting nerd neck. This is an attempt to get rid of that. This creates a toolbar application that allows you to change intervals of how often your webcam tracks and recommends a posture check. Any and all feedback is appreciated.
+
+[https://github.com/wtbates99/opencv2-posture-corrector](https://github.com/wtbates99/opencv2-posture-corrector)",6,0,Brief-Title9622,2025-01-21 02:34:57,https://www.reddit.com/r/dataengineering/comments/1i68dy1/nerd_neck_prevention_opencv2posturecorrector/,False,False,False,False
+1i67wt2,Need help with my data model,"Apologies, I know this is probably a simple question, but data is not my main job and I'm stumped. 
+
+
+My data set is not large, 300-400 rows, 122 columns. My data is [natively] already in a single table. The issue is the dates are in 116 columns (on the x-axis.) Six remaining columns are a hierarchy of forecasts from highest level down to man hours. 
+
+Structure looks like attached pic #1. 
+
+
+In my data model, (pic #1, right hand side), in the AllData_1 table, I created a unique ID for each row by combining Job+Trade into a Primary key column.  In the DateKey table, I transposed the axes, creating a date column, with the Job+Trade on the other (y-)axis.
+
+
+Even though they are technically matching data sets, they don't have matching *columns* so currently, I can't link the two tables in the model. Wondering if I can create some kind of bridge table, or if I have to create separate transposed tables for each column? (Seems unnecessarily redundant.) Or is there a simpler way to do this.
+
+
+My pivoted table (pic#2) looks amazing, everything is where it needs to be... Except (without linking the tables,) is obviously missing the actual data.
+
+
+Constraints:
+1. If this has already been answered in this sub (or another), I can't figure out how the response applies. I know this is probably a stupid question, please and thank you for helping me.
+
+
+2. I don't have access to PowerBI for several more weeks. Just PQuery, PPivot & Excel. All are 365 versions  
+
+
+3.CEO etc are accustomed to this layout, so original table & end result display can't change much. 
+
+
+4. Multiple users access sheet each month, I have it protected, but would prefer not to store interim tables in the workbook or elsewhere. I don't see any reason why this can't be done with PQ, PP & Excel.
+
+
+5. I can do some DAX, M, & Excel formulas, but I'm trying to stay away from VBA for this workbook. (But I can't see where VBA would be needed here anyway - this is just my lack of data modeling knowledge + my lack of skill in Power pivot. (Just started using power pivot 3 days ago.) 
+
+If this is not the correct forum and you can direct me to a better one, please let me know. Thank you, thank you!!",5,6,Stacys__Mom_,2025-01-21 02:11:02,https://www.reddit.com/gallery/1i67wt2,False,False,False,False
+1i5w2lk,Recommendations for a Low-Code Data Transformation Tool Similar to Power Query?,"Hey All,
+
+I’m looking for a low-code solution for performing data transformations—something that works like Power Query in Power BI, where you press buttons and use an intuitive interface to clean and transform data without manually writing code for each step.
+
+Ideally, I’m hoping for:
+	•	A tool or plugin that integrates with Python (or works standalone).
+	•	A low-code or no-code approach for data cleaning and transformation.
+	•	Compatibility with PyCharm or VS Code as a plugin would be a bonus.
+	•	Free or paid options—I’m open to either, as long as it’s efficient and user-friendly.
+
+Does anyone know of any tools or plugins that fit the bill? Any recommendations or insights would be greatly appreciated!
+
+Thanks in advance!",4,3,Wonderful-Ad6140,2025-01-20 17:46:48,https://www.reddit.com/r/dataengineering/comments/1i5w2lk/recommendations_for_a_lowcode_data_transformation/,False,False,False,False
+1i5sdbv,Is AWS experience mandatory for Data Engineer roles at Amazon?,"Hi Folks, I wanted to ask this question to people who have received opportunity from Amazon for Data Engineer roles.
+Is AWS cloud exposure mandatory for getting shortlisted for Amazon Data engineer role? I am experienced in Azure cloud and tried applying to Amazon plenty of times and never got any reply from Amazon. I have 3 years of experience in data engineering domain.
+I would be grateful for any opinion.",4,4,burningpenofasia,2025-01-20 15:14:23,https://www.reddit.com/r/dataengineering/comments/1i5sdbv/is_aws_experience_mandatory_for_data_engineer/,False,False,False,False
+1i5zeub,"Teaching a machine to read, how LLM's comprehend text
+",,3,0,Dilocan,2025-01-20 19:59:23,https://dilovan.substack.com/p/teaching-a-machine-to-read-how-llms,False,False,False,False
+1i69s15,What is the best path to go from a Business Intelligence Analyst to a Data Engineer?,"Hello all, So I am 6 years currently in the role of a Business Intelligence Analyst and I want to advance my career. I have a MBA in Business Analytics but in my actual job, all I really do is simple SQL pulls, reviewing data trends and pivot tables for sales trends. I want to advance my career to be more technical and I want to dive into the Data Engineering side of things, more back end database building and management, but I don't know what I need to do to or what are the best steps to take towards the Data Engineering side of things? I have intermediate SQL knowledge, Basic Python knowledge and I know I need to expand those areas, but what would you all recommend in regards to additional training or other areas I can expand upon? ",2,2,peruviansonata,2025-01-21 03:47:47,https://www.reddit.com/r/dataengineering/comments/1i69s15/what_is_the_best_path_to_go_from_a_business/,False,False,False,False
+1i5yy3h,"Self-Service Analytics Grounded in Reality - The Good, The Bad, and The Ugly",,2,0,Less-Actuary2500,2025-01-20 19:40:53,https://ryanlynch.me/Professional+Development/Architecture/Technical+POVs/Self-Service+Analytics+Grounded+in+Reality+-+The+Good%2C+The+Bad%2C+and+The+Ugly,False,False,False,False
+1i5xwm2,Make Iceberg table data available to other systems,"I have an AWS Glue catalog with multiple Iceberg tables stored in S3. I want to make the data of these iceberg tables available to other applications inside the company which will consume the data. 
+
+The data volume is low, so solutions like redshift are too expensive for us. Currently our main query engine is AWS Athena, but it has a bunch of limitations like the number of queries it can start within some interval of time. 
+
+Also, I don't want to mantain an ETL pipeline to replicate the data from the iceberg table to a relational database. I want to consume the data directly from S3.
+
+My main attempt was to use duckdb inside a postgresql container, but duckdb iceberg support is still in development.
+
+What would be a possible tech stack in this case?",2,2,Potential-Path-1746,2025-01-20 18:59:27,https://www.reddit.com/r/dataengineering/comments/1i5xwm2/make_iceberg_table_data_available_to_other_systems/,False,False,False,False
+1i642zi,Tough time getting interviews for data engineering manager despite tons of experience at a top company.Can you please critique my profile and pick out the flaw?,"I applied for over 300 companies but the conversion rate has been less than 1%.Most of the times some top companies reached out to me based on my linked in but not based on when I applied for these companies.I sometimes edit my profile to suit the jobs but mostly I do not edit before applying.I ensure there is a match before applying especially when I have superset of skills.
+
+https://preview.redd.it/swdqzve9e8ee1.png?width=1352&format=png&auto=webp&s=2879847fc9e0e52e0d63856a4849c7419dda60bf
+
+",4,33,t3638,2025-01-20 23:11:15,https://www.reddit.com/r/dataengineering/comments/1i642zi/tough_time_getting_interviews_for_data/,False,False,False,False
+1i5uaem,Best technology for interacting with a new Dataware House ?,"Hey guys,
+
+We are building a new Data Warehouse with my team.
+
+The data is self-hosted. I looked around what are the best tech choices in terms of database. I think PostgreSQL makes a lot of sense, you know, open source, good analytics tools and good for large amounts of data. But really, what are the other choices, care to share some experiences?
+
+https://preview.redd.it/1kbg9onte6ee1.jpg?width=1400&format=pjpg&auto=webp&s=32a22c9e21ff01279862bfa804c9c778038e719f
+
+",1,1,fixmyanxiety,2025-01-20 16:34:19,https://www.reddit.com/r/dataengineering/comments/1i5uaem/best_technology_for_interacting_with_a_new/,False,False,False,False
+1i5vmg2,Sql dialect,"If one has experience with specific sql dialect can he pick up another sql dialect easily?
+
+",2,14,KBHAL,2025-01-20 17:28:36,https://www.reddit.com/r/dataengineering/comments/1i5vmg2/sql_dialect/,False,False,False,False
