@@ -10,7 +10,8 @@ Transform the data using AWS Glue and Amazon Athena.
 Load the transformed data into Amazon Redshift for analytics and querying.
 
 **Architecture**
-![Pipeline jpg](https://github.com/user-attachments/assets/5427b2db-755b-4b2d-b9ae-8a168d411e08)
+
+![Pipeline](https://github.com/user-attachments/assets/3c9995fd-0342-43a4-9114-ba19aac169a4)
 
 Reddit API: Source of the data.
 Apache Airflow & Celery: Orchestrate the ETL process and manage task distribution.
